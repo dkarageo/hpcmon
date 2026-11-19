@@ -1,7 +1,12 @@
 # hpcmon
 
-`hpcmon` is a command-line tool that shows, in one view, the resources you have left on the
-EuroHPC clusters you have access to:
+[![PyPI](https://img.shields.io/pypi/v/hpcmon)](https://pypi.org/project/hpcmon/)
+[![Python](https://img.shields.io/badge/python-3.9%E2%80%933.14-blue)](https://pypi.org/project/hpcmon/)
+[![Tests](https://github.com/dkarageo/hpcmon/actions/workflows/tests.yml/badge.svg)](https://github.com/dkarageo/hpcmon/actions/workflows/tests.yml)
+[![Coverage: 100%](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/dkarageo/hpcmon/actions/workflows/tests.yml)
+[![License](https://img.shields.io/pypi/l/hpcmon)](https://github.com/dkarageo/hpcmon/blob/main/LICENSE)
+
+`hpcmon` is a command-line tool that shows, in one view, your available resources on multiple EuroHPC clusters:
 
 - **compute budgets**: what remains until the end of each project, and until the end of the
   month for clusters that split budgets per month;
@@ -11,8 +16,7 @@ EuroHPC clusters you have access to:
   converted to an estimate in **GPU-hours**, so that the budgets of different centres (core-hours,
   node-hours, ...) can be compared.
 
-It connects to every cluster with your own `ssh` command, runs the site's accounting tools
-(`lumi-allocations`, `jutil`, `saldo`, `cindata`, `myquota`, `squeue`, ...) and presents the
+It connects to every cluster with your own ssh config, runs the site's accounting tools and presents the
 results in the same format for every cluster.
 
 Supported systems: **LUMI**, **JUPITER**, **Leonardo** and **MeluXina**. Any other Slurm cluster
@@ -20,20 +24,35 @@ can be added to show its jobs only.
 
 ## Installation
 
+Install it with pip:
+
 ```bash
 pip install hpcmon
 ```
 
-or, from a clone of the repository:
+You can also install it in an environment of its own, so that
+its dependencies never conflict with those of your other Python packages, with
+[pipx](https://pipx.pypa.io/) (`pipx install hpcmon`) or [uv](https://docs.astral.sh/uv/)
+(`uv tool install hpcmon`).
+
+To install the development version, directly from GitHub:
 
 ```bash
+pip install git+https://github.com/dkarageo/hpcmon.git
+```
+
+or from a clone of this repository:
+
+```bash
+git clone https://github.com/dkarageo/hpcmon.git
+cd hpcmon
 pip install .
 ```
 
 `hpcmon` requires Python 3.9 or later on your local machine (Linux or macOS; the automated tests
 run on Linux). Nothing needs to be installed on the clusters.
 
-## Prerequisites: SSH access
+## Prerequisites: SSH access to clusters
 
 `hpcmon` runs locally and connects to each cluster through SSH. By default it runs
 `ssh lumi`, `ssh jupiter`, `ssh leonardo` and `ssh meluxina`, so the simplest setup is a host alias
@@ -163,13 +182,7 @@ shared nodes, no more than the cores and memory that come with their GPUs).
 the end of the current month, for clusters that split budgets per month. Below the amounts of the
 budgets that can be spent on GPU nodes, `~N GPU-h` is the estimate of what they buy in GPU-hours
 (see *GPUs and GPU-hours* below). When several clusters have such budgets, a summary of the
-GPU-hours left on all of them is printed last. Remaining amounts are
-green, yellow or red when more than 50%, 20–50% or less than 20% is left, and dimmed once the
-project has ended. End dates turn yellow 30 days and red 14 days before the end. Storage usage
-turns yellow above 80% and red above 95% of the quota.
-
-The tables adapt to the width of the terminal: on narrow terminals long values wrap over several
-lines instead of being truncated.
+GPU-hours left on all of them is printed last.
 
 ### Options
 
@@ -390,4 +403,4 @@ To release a version:
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](https://github.com/dkarageo/hpcmon/blob/main/LICENSE).
