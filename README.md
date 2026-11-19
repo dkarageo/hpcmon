@@ -369,36 +369,24 @@ pip install -e .
 pytest                    # runs the test suite with coverage (it requires 100%)
 ```
 
-The tests never connect to a cluster. They use real outputs of the cluster tools, stored in
-`tests/fixtures/`, in which the names were anonymised and the usage figures changed.
+The tests never connect to a cluster. They use mock outputs of the cluster tools, stored in
+`tests/fixtures/`.
 
 The tests also run on GitHub Actions (`.github/workflows/tests.yml`) for every push and pull
 request, on all the supported Python versions and with the oldest supported dependencies.
 
-## Releasing
+## PyPI Releases
 
 Releases are published on PyPI by GitHub Actions (`.github/workflows/release.yml`) when a release
 is published on GitHub. The workflow runs the tests, checks that the release tag is the package
 version, builds the sdist and the wheel, and uploads them with PyPI's *trusted publishing*, so no
 API token is stored anywhere.
 
-One-time setup:
-
-1. On PyPI, open *Your account → Publishing* and add a *pending publisher* (for a project that does
-   not exist yet) with the PyPI project name `hpcmon`, the owner and name of the GitHub repository,
-   the workflow name `release.yml` and the environment name `pypi`.
-2. On GitHub, create an environment named `pypi` in *Settings → Environments*. You can require a
-   reviewer there, so that every upload must be approved.
-
 To release a version:
 
 1. Set `__version__` in `hpcmon/__init__.py` (e.g. `"0.2.0"`) and add the changes to `CHANGELOG.md`.
 2. Commit and push.
 3. Create a release on GitHub with a new tag named after the version (`v0.2.0` or `0.2.0`).
-
-If the tests fail, or if the tag does not match the version, nothing is published: fix the problem,
-delete the release and its tag, and create them again. (`setup.cfg` makes the sdist record its files
-as owned by root, so that a build made on your own machine does not contain your user name.)
 
 ## License
 
