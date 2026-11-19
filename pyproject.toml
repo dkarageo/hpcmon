@@ -42,6 +42,12 @@ dev = ["pytest>=7", "pytest-cov>=4", "build", "twine"]
 [project.scripts]
 hpcmon = "hpcmon.cli:main"
 
+[project.urls]
+Homepage = "https://github.com/dkarageo/hpcmon"
+Source = "https://github.com/dkarageo/hpcmon"
+Issues = "https://github.com/dkarageo/hpcmon/issues"
+Changelog = "https://github.com/dkarageo/hpcmon/blob/main/CHANGELOG.md"
+
 [tool.setuptools.dynamic]
 version = { attr = "hpcmon.__version__" }
 
