@@ -1,0 +1,23 @@
+[
+  {
+    "coreh-avail-percent": "92.7",
+    "coreh-consumed-user-prev-month": "7421.3",
+    "project": "E-DEV-2026D00-001",
+    "project-state": "A",
+    "coreh-avail": "801261.12",
+    "system": "jupiter",
+    "coreh-quota-total": "864000",
+    "coreh-consumed-curr-month": "0",
+    "cont-state": "normal",
+    "coreh-consumed-total": "62738.88",
+    "budget-account": "e-dev-2026d00-001",
+    "coreh-consumed-user-total": "62738.88",
+    "cont-partition": "jupiter_booster",
+    "coreh-consumed-prev-month": "7421.3",
+    "username": "jdoe123456789",
+    "acct-period-end": "2027-05-31",
+    "acct-period-start": "2026-06-01",
+    "coreh-consumed-user-curr-month": "0",
+    "acct-mode": "fixed"
+  }
+]

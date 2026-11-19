@@ -1,0 +1,13 @@
+[1m                                                   COMPUTE ALLOCATIONS FOR CURRENT MONTH                                                    [0m
+[1m                                                   COMPUTE USAGE FROM  2026-11-01 to NOW                                                    [0m
+
+[1mProject                              CPU node-hours             GPU node-hours            FPGA node-hours           LargeMem node-hours[0m
+[1m                                   Used   Max   %used         Used   Max   %used         Used   Max   %used         Used   Max   %used       [0m
+p200001                             0                   [0m       27    210   [92m 12.9%  [0m       0                   [0m       0                   [0m    
+
+                                                         [1mDATA ALLOCATIONS[0m
+                                                          
+ [1mDatapath[0m                                      [1mData GiB[0m                           [1mNo. Files[0m
+                                     [1m  Used |   Max   | Use%[0m        [1m     Used |     Max    | Use%[0m
+/home/users/u100001                       5 |     150 | [92m  3%[0m             4512 |     150000 | [92m  3%[0m
+/project/home/p200001                   213 |    5000 | [92m  4%[0m           187342 |    2000000 | [92m  9%[0m

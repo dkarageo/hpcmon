@@ -1,0 +1,24 @@
+
+Information for project_465000123:
+
+- Data was last refreshed at Wed Nov 18 19:24:19 2026
+- General information:
+  - Title: EHPC-DEV-D / EHPC-DEV-2026D00-001 / An Example Project Title
+  - 31% of the project time has passed
+    137 day(s) of compute left
+  - 227 day(s) left until data removal
+- Storage information:
+  - Project hosted on lustrep3
+  - Disk quota (cached info):
+    - /project/project_465000123: block quota:   0.0% used (    4KiB of   100GiB/    110GiB soft/hard),
+                                  file quota:    0.0% used (    1    of   200K  /    201K   soft/hard)
+    - /scratch/project_465000123: block quota:   0.0% used (    4KiB of    20TiB/20.0010TiB soft/hard),
+                                  file quota:    0.0% used (    1    of     4M  /4.00100M   soft/hard)
+    - /flash/project_465000123:   block quota:   0.0% used (    4KiB of     1TiB/1.00098TiB soft/hard),
+                                  file quota:    0.0% used (    1    of     3M  /3.00100M   soft/hard)
+- State of the allocation (cached info):
+  - CPU Khours:        0.0% used (0.000 of 50)
+  - GPU hours:         0.0% used (0 of 12000)
+  - Storage TBhours:   0.0% used (0 of 200000)
+- Project members (by userid):
+  - jdoe1234 - JOHN DOE

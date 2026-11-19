@@ -1,0 +1,5 @@
+1234567|standard-g|project_465000123|RUNNING|1:02:03|2-00:00:00|4|nid[005000-005003]|train|model [v2]
+1234570|dev-g|project_465000123|COMPLETING|10:00|30:00|1|nid005100|cleanup
+1234568|small-g|project_465000123|PENDING|0:00|1:00:00|1|(Priority)|eval
+1234569_[1-10]|small-g|project_465000999|PENDING|0:00|30:00|1|(AssocGrpGRESMinutes)|sweep
+1234571|small|project_465000123|SUSPENDED|5:00|30:00|1|nid001001|suspended-job

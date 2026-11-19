@@ -1,0 +1,1 @@
+[ERROR] Wait at least 10 seconds before executing myquota again

@@ -1,0 +1,40 @@
+[
+  {
+    "inode-hard-limit": "132000",
+    "data-hard-limit": "34603008KB",
+    "inode-usage": "4128",
+    "username": "jdoe123456789",
+    "storage": "exasm",
+    "group": "jdoe123456789",
+    "filesystem": "exa_home",
+    "last-updated": "2026-11-18 17:20:01",
+    "inode-soft-limit": "120000",
+    "data-soft-limit": "31457280KB",
+    "data-usage": "1187264KB"
+  },
+  {
+    "group": "e-dev-2026d00-001",
+    "storage": "exasm",
+    "username": "jdoe123456789",
+    "filesystem": "exa_scratch"
+  },
+  {
+    "storage": "exasm",
+    "data-soft-limit": "-",
+    "inode-soft-limit": "-",
+    "data-usage": "198342876KB",
+    "inode-hard-limit": "-",
+    "inode-usage": "18634",
+    "username": "jdoe123456789",
+    "data-hard-limit": "-",
+    "filesystem": "exa_project1",
+    "last-updated": "2026-11-18 17:24:49",
+    "group": "e-dev-2026d00-001"
+  },
+  {
+    "group": "e-dev-2026d00-001",
+    "username": "jdoe123456789",
+    "filesystem": "exa_fscratch",
+    "storage": "exasm"
+  }
+]

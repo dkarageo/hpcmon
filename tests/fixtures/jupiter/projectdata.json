@@ -1,0 +1,47 @@
+[
+  {
+    "data-hard-limit": "112742891520KB",
+    "last-updated": "2026-11-18 17:20:27",
+    "inode-hard-limit": "6600000",
+    "fs-type": "scratch",
+    "unixgroup": "e-dev-2026d00-001",
+    "filesystem": "exa_scratch",
+    "project": "e-dev-2026d00-001",
+    "project-dir": "/e/scratch/e-dev-2026d00-001",
+    "inode-usage": "1",
+    "storage": "exasm",
+    "data-soft-limit": "107374182400KB",
+    "data-usage": "0",
+    "inode-soft-limit": "6000000"
+  },
+  {
+    "fs-type": "project",
+    "filesystem": "exa_project1",
+    "inode-soft-limit": "3000000",
+    "data-soft-limit": "17179869184KB",
+    "unixgroup": "e-dev-2026d00-001",
+    "storage": "exasm",
+    "last-updated": "2026-11-18 17:24:49",
+    "project-dir": "/e/project1/e-dev-2026d00-001",
+    "data-hard-limit": "19327352832KB",
+    "inode-usage": "18652",
+    "project": "e-dev-2026d00-001",
+    "data-usage": "198366876KB",
+    "inode-hard-limit": "3300000"
+  },
+  {
+    "last-updated": "2026-11-18 17:20:01",
+    "unixgroup": "e-dev-2026d00-001",
+    "fs-type": "fscratch",
+    "data-usage": "0",
+    "inode-soft-limit": "6000000",
+    "inode-hard-limit": "6600000",
+    "data-soft-limit": "32212254720KB",
+    "storage": "exasm",
+    "project-dir": "/e/fscratch/e-dev-2026d00-001",
+    "project": "e-dev-2026d00-001",
+    "data-hard-limit": "35433480192KB",
+    "filesystem": "exa_fscratch",
+    "inode-usage": "1"
+  }
+]

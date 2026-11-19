@@ -1,0 +1,6 @@
+USER       AREADESCR                                     AREAID                                   FRESH     USED      QTA    USED%    aUSED     aQTA   aUSED%
+jdoe5678   /leonardo_work/EUHPC_D00_001                  leonardo_work-20000001                    3hou       --       --      --%      87G       2T     4.2%
+jdoe5678   /leonardo_scratch/fast/EUHPC_D00_001          leonardo_scratch_fast-20000002            3hou       --       --      --%       4K       2T     0.0%
+jdoe5678   /leonardo_scratch/large/userexternal/jdoe5678 leonardo_scratch-10000003                 3hou       4K       --      --%       --       --      --%
+jdoe5678   /leonardo/pub/userexternal/jdoe5678           leonardo_pub-10000002                     3hou       4K      60G     0.0%       --       --      --%
+jdoe5678   /leonardo/home/userexternal/jdoe5678          leonardo_home-10000001                    3hou     3.4G      60G     5.7%       --       --      --%
